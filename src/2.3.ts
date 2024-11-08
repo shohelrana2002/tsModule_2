@@ -25,4 +25,14 @@
       age: 20,
     },
   ];
+
+  // generic tuple
+
+  type GenericTuple<x, y> = [x, y];
+
+  const men: GenericTuple<string, string> = ["mr. x", "Mr.Y"];
+  const UserWithId: GenericTuple<number, { name: string; email: string }> = [
+    123,
+    { name: "sho", email: "sho@" },
+  ];
 }
